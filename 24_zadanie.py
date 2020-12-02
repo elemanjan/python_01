@@ -10,9 +10,6 @@
 7777777 """
 
 n = int(input('Enter number: '))
-t = 10
-s = 1
-lenn = 1
 
 for i in range(1, n):
     for j in range(1, i+1):
