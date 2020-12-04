@@ -11,6 +11,7 @@
 count = 0
 h = int(input('height: '))
 w = int(input('weight: '))
+print()
 for i in range(h):
     for j in range(w):
         print(count, end='')
