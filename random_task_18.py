@@ -1,9 +1,25 @@
 """ Год является високосным, если он делится на 4, за исключением того, что годы, делимые на 100, не являются високосными, если они также не делятся на 400.
 Попросите пользователя ввести год и с помощью оператора // определить, сколько високосных годов было между 1600 и этим годом.
 """
-from math import *
-count = 0
-for i in range(1600, 2020):
-    if i % 4 == 0 and i % 100 != 0:
-        count += 1
-print(count)
+d = int(input('Сдача: '))
+q25 = 0
+dime10 = 0
+nickel5 = 0
+penny1 = 0
+for i in range(d):
+    if d >= 25:
+        q25 = d // 25
+        d = d % 25
+    elif d >= 10:
+        dime10 = d // 10
+        d = d % 10
+    elif d >= 5:
+        nickel5 = d // 5
+        d = d % 5
+    elif d >= 1:
+        penny1 = d // 1
+
+print("quarter -", q25)
+print("dime -", dime10)
+print("nickel -", nickel5)
+print("penny -", penny1)
