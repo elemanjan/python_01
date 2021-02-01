@@ -1,14 +1,16 @@
-l = [61, 228, 9]
-n = ''
-s = []
-for i in range(0, len(l)):
-    s.append(str(l[i]))
-t = 0
-temp = 0
-for i in range(len(s)):
-    for j in range(i+1, len(s)):
-        if int(s[i][0]) > int(s[j][0]):
-            temp += 1
-    if temp == len(s)-1:
-        n += s[i]
-print(n)
+l = [61, 228, 9, 115]
+l.sort()
+# l.reverse()
+s = l
+lst = []
+for i in range(0, len(l)-1):
+    if str(l[i])[0] < str(l[i+1])[0]:
+        l[i], l[i+1] = l[i+1], l[i]
+
+tsl = []
+# for i in s:
+#     for j in i:
+#         tsl.append(j)
+#     lst.append(tsl)
+# # print(i)
+print(l)

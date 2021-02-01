@@ -18,5 +18,3 @@ lst.sort()
 new_lst = lst + lst
 new_lst[3] = 25
 print(new_lst)
-
-# 6
